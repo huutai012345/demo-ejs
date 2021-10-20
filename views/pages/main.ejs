@@ -17,6 +17,7 @@
         <th>Description</th>
         <th>Price</th>
         <th>Quantity</th>
+        <th>Action</th>
       </tr>
 
       <% data.forEach(function(item){ %>
@@ -35,6 +36,9 @@
           </td>
           <td>
             <%= item.quantity %>
+          </td>
+          <td>
+            <a href="products/<%= item.id %>/delete">Delete</a>
           </td>
         </tr>
         <% }); %>

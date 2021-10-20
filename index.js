@@ -68,6 +68,9 @@ app.post("/login", function (req, res) {
 });
 
 app.post("/products", function (req, res) {
+  if (!isLogged) {
+    res.render("pages/login");
+  }
   const { name, description, price, quantity } = req.body;
 
   connection.query(
@@ -75,7 +78,20 @@ app.post("/products", function (req, res) {
     { name, description, price, quantity },
     function (error, results, fields) {
       if (error) throw error;
+      return res.redirect("/");
+    }
+  );
+});
 
+app.get("/products/:id/delete", function (req, res) {
+  if (!isLogged) {
+    res.render("pages/login");
+  }
+
+  connection.query(
+    `DELETE FROM products WHERE id = ${req.params.id}`,
+    function (error, results, fields) {
+      if (error) throw error;
       return res.redirect("/");
     }
   );
