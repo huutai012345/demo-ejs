@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../resources/style-login.css" />
+</header>
+
+<body>
+    <form action="/login" method="post">
+        <div class="imgcontainer">
+            <img src="../resources/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="userName" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+    </form>
+</body>
+
+</html>

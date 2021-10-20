@@ -1,0 +1,95 @@
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.content .btn-add {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.content .btn-add a {
+  padding: 15px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.table-box {
+  display: inline-block;
+  width: 1000px;
+  height: 400px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #005277;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background: #00bcd4;
+  color: #fff;
+}
+
+tr th:nth-child(1) {
+  width: 60px;
+  text-align: center;
+  background: #03707d;
+}
+
+tr td:nth-child(1) {
+  color: #fff;
+  background: #00bcd4;
+}
+
+.formInput {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 25px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formInput label {
+  width: 100px;
+  float: left;
+}
+
+.formInput input {
+  margin-bottom: 10px;
+  width: 350px;
+  padding: 5px;
+}
+
+.formInput select {
+  margin-bottom: 10px;
+  width: 365px;
+  padding: 5px;
+}
+
+.formInput button {
+  width: 100px;
+}
+
+.error {
+  color: red;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
